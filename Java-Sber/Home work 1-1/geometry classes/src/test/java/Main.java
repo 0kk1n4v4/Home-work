@@ -35,5 +35,9 @@ public class Main {
         rectangle.square(a,a);
         rectangle.perimeter(a,a);
 
+
+        //Создаем треугольник
+
+
     }
 }

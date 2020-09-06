@@ -7,7 +7,7 @@ https://ru.wikipedia.org/wiki/Прямоугольник
 *имеет 4 стороны.
 * есть площадь
 * есть периметр
-
+* есть длина стороны
 
  */
 
@@ -17,15 +17,19 @@ public class rectangle {
         public static void main(String[] args) {
 
         }
-        // sq = a * b
+        // Форумла рассчета площади sq = a * b
         public static int square (int a, int b){
                 int sq = a * b;
                 return sq;
         }
-        // P=2(a+b)
+        // формула рассчета периметра P=2(a+b)
         public static int perimeter (int a, int b){
-                int sq = a * b;
-                return sq;
+                int temp = 2 * (a * b);
+                return temp;
+        }
+        //Выводим длину стороны
+        public static void side (int a){
+                System.out.println("Длина любой из 4х сторон"+a);
         }
 
 

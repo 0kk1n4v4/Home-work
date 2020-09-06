@@ -11,5 +11,22 @@ https://ru.wikipedia.org/wiki/Круг
 * Хорда — отрезок, соединяющий любые две точки окружности.
 
  */
-public class circle {
+public class Circle {
+    int r;
+
+    // Форумла рассчета диаметра = 2 * R
+    public static int diametr (int r){
+        int tmp = 2 * r;
+        System.out.println("Диаметр круга :"+tmp);
+        return tmp;
+    }
+
+    // РАдиус
+    public static int radius (int r){
+        System.out.println("Радиус круга :"+r);
+        return r;
+    }
+
+
+
 }

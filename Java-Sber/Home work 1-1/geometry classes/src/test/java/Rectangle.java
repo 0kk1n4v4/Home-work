@@ -11,7 +11,7 @@ https://ru.wikipedia.org/wiki/Прямоугольник
 
  */
 
-public class rectangle {
+public class Rectangle {
         int a, b;
 
         public static void main(String[] args) {
@@ -20,16 +20,18 @@ public class rectangle {
         // Форумла рассчета площади sq = a * b
         public static int square (int a, int b){
                 int sq = a * b;
+                System.out.println("Площадь :" +sq);
                 return sq;
         }
         // формула рассчета периметра P=2(a+b)
         public static int perimeter (int a, int b){
                 int temp = 2 * (a * b);
+                System.out.println("Периметр :"+temp);
                 return temp;
         }
         //Выводим длину стороны
         public static void side (int a){
-                System.out.println("Длина любой из 4х сторон"+a);
+                System.out.println("Длина любой из 4х сторон: "+a);
         }
 
 

@@ -4,6 +4,7 @@ package test.java;
     Реализовать иерархию объектов Circle, Rectangle, Triangle, Square
     Пока что мутим несколько классов с параметрами и методами вычисления.
 
+
  */
 
 
@@ -37,6 +38,13 @@ public class Main {
 
 
         //Создаем треугольник
+        System.out.println(""+"\nВведите сторону треугольника a и b:");
+        Triangle triangle = new Triangle();
+        a = Integer.parseInt(reader.readLine());
+        int b = Integer.parseInt(reader.readLine());
+        System.out.println("Площадь треугольника равна :"+triangle.square(a,b));
+        System.out.println("Теорема Пифагора  :"+triangle.pifagor(a,b));
+
 
 
     }

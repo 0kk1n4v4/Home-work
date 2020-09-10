@@ -17,13 +17,14 @@ class Main {
         BufferedReader filereader = new BufferedReader(new FileReader(file));
         String linefromfile = filereader.readLine();
         Map<String, Integer> tempmap = new HashMap<String, Integer>();
-
-        while ((linefromfile != null)) {
+        System.out.println("Считываем файл...");
+        while ((linefromfile != null)) {        // Пофиксить вывод null!
             String[] singlewords = linefromfile.split(" ");
             for (String word : singlewords) {
                 tempmap.put(word, word.hashCode());
                 linefromfile = filereader.readLine();
             }
+            System.out.println(linefromfile);
         }
         System.out.println("Количество уникальных элементов :" + tempmap.size());
 
@@ -38,6 +39,9 @@ class Main {
         for (int i = list.size()-1; i >=0; i--) {
             System.out.println(list.get(i));
         }
+
+        ////////////////
+        System.out.println("*88888888888888888888");
 
 
 
